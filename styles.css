@@ -1,15 +1,8 @@
-html{
-    height: 100%;
-    width: 100%;
-}
-
 body{
     background-color: chocolate;
     color: black;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
 }
 
 ul{
@@ -20,6 +13,10 @@ ul{
     clear:both
 }
 
+.game{
+    padding-bottom: 0;
+}
+
 .header{
     background-color: black;
     color: whitesmoke;
@@ -27,11 +24,6 @@ ul{
     font-size: 3vmin;
     text-align: center;
     padding: 10px;
-    height: 10%;
-}
-
-.game{
-    height:75%;
 }
 
 .clicker{
@@ -39,15 +31,22 @@ ul{
     float: left;
     width: 70%;
     box-sizing:border-box;
-    position: relative;
     box-sizing:border-box;
+    align-items: center;
+    margin-bottom: auto;
+
 }
 
 .cookie{
     border-radius: 300px;
     background-color: chocolate;
+    width: 100%;
     border-style: none;
     align-items: center;
+    padding-top: 15%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 40%;
     margin: auto;
     margin-bottom: 0;
 }
@@ -64,14 +63,14 @@ ul{
 }
 
 .shop{
-    background-color: whitesmoke;
+    background-color: grey;
     color: black;
     text-align: center;
     float: right;
     width: 30%;
     border-left: 2px black solid;
     box-sizing:border-box;
-    margin-bottom: 0;
+
 }
 
 .shop_head, .shop_item{
@@ -79,6 +78,7 @@ ul{
     align-items: center;
     position: relative;
     margin: auto;
+    
 }
 
 .shop_head{
@@ -87,26 +87,44 @@ ul{
     border-bottom: 2px black solid;
     padding-top: 10%;
     padding-bottom: 10%;
+    
 }
 
 .shop_items{
     padding-top: 10%;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .shop_item{
+    background-color: lightgray;
     padding: 5px;
     margin-bottom: 10px;
 }
-
-
-
-
-
-
 
 .footer{
     background-color: black;
     color: whitesmoke;
     padding: 5px;
-    height: 10%;
+}
+
+@media(max-width:650px){
+    .clicker{
+        float: none;
+        width: 100%;
+
+    }
+
+    .shop{
+        float: none;
+        width: 100%;
+        border-left: none;
+    }
+
+    .cookie{
+        padding-top: 10%;
+        padding-left: 30%;
+        padding-right: 30%;
+        padding-bottom: 20%;
+    }
 }
